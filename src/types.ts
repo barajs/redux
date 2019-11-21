@@ -3,7 +3,7 @@ import { Store } from 'redux'
 export interface ReduxMold {
   actions: string[]
   asyncActions: string[]
-  preloadedState: any
+  initialState: any
   reducers: []
   store: Store
 }

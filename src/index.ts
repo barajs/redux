@@ -1,4 +1,4 @@
-import { portion, flow, popEvent } from '@barajs/core'
+import { portion, flow, popEvent, popSeep } from '@barajs/core'
 import { createStore } from 'redux'
 
 import { ReduxMold, ReduxContext, BARA_REDUX } from './types'
@@ -8,11 +8,11 @@ const Redux = portion<any, ReduxContext, ReduxMold>({
   name: BARA_REDUX,
   mold: {},
   init: mold => {
-    const { reducers, preloadedState, store: predefinedStore } = mold
+    const { reducers, initialState, store: predefinedStore } = mold
     const store = !predefinedStore
-      ? createStore(reducers, preloadedState)
+      ? createStore(reducers, initialState)
       : predefinedStore
-    return { store }
+    return { store, initialState }
   },
   whenInitialized: flow<unknown, ReduxContext, ReduxMold>({
     bootstrap: ({ context, next }) => {
@@ -25,7 +25,9 @@ const Redux = portion<any, ReduxContext, ReduxMold>({
 
 const { whenInitialized: whenStoreReady, whenStateChange } = popEvent(Redux)
 
-export { Redux, whenStoreReady, whenStateChange }
+const { stateProp } = popSeep(whenStateChange)
+
+export { Redux, whenStoreReady, whenStateChange, stateProp }
 export * from './types'
 export * from './formula'
 export default Redux
