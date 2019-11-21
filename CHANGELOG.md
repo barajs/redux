@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/barajs/redux/compare/v1.0.1...v1.1.0) (2019-11-21)
+
+
+### Features
+
+* **formula:** add select function ([6c1e03e](https://github.com/barajs/redux/commit/6c1e03e8ea79a81820854f3f9040f7656b5f1c55))
+* **seep:** add stateProp seep for detecting prop change ([e3a5c19](https://github.com/barajs/redux/commit/e3a5c1921ad0111db3faf7492a00380f45b8124c))
+
 ## [1.0.1](https://github.com/barajs/redux/compare/v1.0.0...v1.0.1) (2019-11-21)
 
 
