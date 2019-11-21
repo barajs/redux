@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/barajs/redux/compare/v1.1.0...v1.1.1) (2019-11-21)
+
+
+### Bug Fixes
+
+* **deps:** upgrade @barajs/core for typing fix ([e78e987](https://github.com/barajs/redux/commit/e78e9877ec046738300df3fd88b659385851b042))
+* **seep:** make stateProp aware of change from the initialState ([e9fbe30](https://github.com/barajs/redux/commit/e9fbe30075990751088a555f5c4949d140ff9c99))
+
 # [1.1.0](https://github.com/barajs/redux/compare/v1.0.1...v1.1.0) (2019-11-21)
 
 
