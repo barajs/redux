@@ -1,5 +1,5 @@
 import { getContext } from '@barajs/core'
-import { Formula, lensProp } from '@barajs/formula'
+import { lensProp } from '@barajs/formula'
 import { Store } from 'redux'
 import { BARA_REDUX } from '../types'
 
@@ -10,17 +10,13 @@ export const stateProp = (subscribeProp: string) => (
 ) => {
   const data: any = getContext(BARA_REDUX, contextes)
   const store: Store = data.store
+  const initialState = data.initialState
   const currentState = lensProp(subscribeProp)(store.getState())
-
-  const shouldPass = currentState !== lastState[subscribeProp]
-  //   console.log(
-  //     `subscribeProp: ${subscribeProp}`,
-  //     `\ncompare: \n\r Last: ${JSON.stringify(
-  //       lastState[subscribeProp],
-  //     )} - Current: ${JSON.stringify(currentState)}`,
-  //     '\nShould pass: ',
-  //     shouldPass,
-  //   )
+  const lastStateValue =
+    lastState[subscribeProp] === undefined
+      ? lensProp(subscribeProp)(initialState)
+      : lensProp(subscribeProp)(lastState)
+  const shouldPass = currentState !== lastStateValue
   if (shouldPass) {
     lastState[subscribeProp] = currentState
     return true
