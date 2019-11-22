@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/barajs/redux/compare/v1.2.0...v1.3.0) (2019-11-22)
+
+
+### Features
+
+* **formula:** add ...rest params for select function ([16d64c0](https://github.com/barajs/redux/commit/16d64c015758d251ebae7c92cdb88f3458ce89d7))
+
 # [1.2.0](https://github.com/barajs/redux/compare/v1.1.1...v1.2.0) (2019-11-22)
 
 
