@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/barajs/redux/compare/v1.1.1...v1.2.0) (2019-11-22)
+
+
+### Features
+
+* **formula:** add getState function ([3a78280](https://github.com/barajs/redux/commit/3a78280fd0a0372e299a9fad625fdbaa5e173082))
+
 ## [1.1.1](https://github.com/barajs/redux/compare/v1.1.0...v1.1.1) (2019-11-21)
 
 
