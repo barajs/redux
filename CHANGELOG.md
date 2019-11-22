@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/barajs/redux/compare/v1.3.0...v1.3.1) (2019-11-22)
+
+
+### Bug Fixes
+
+* **formula:** select not correctly build ([512fb91](https://github.com/barajs/redux/commit/512fb914276e1cca583bf141cfd0578e4bb8b05b))
+
 # [1.3.0](https://github.com/barajs/redux/compare/v1.2.0...v1.3.0) (2019-11-22)
 
 
