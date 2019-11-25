@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/barajs/redux/compare/v1.3.2...v1.3.3) (2019-11-25)
+
+
+### Bug Fixes
+
+* **seep:** stateProp check not correctly emitted ([d0c91bf](https://github.com/barajs/redux/commit/d0c91bf0c4e2442cc4717ccf73fc114ea92b31c9))
+
 ## [1.3.2](https://github.com/barajs/redux/compare/v1.3.1...v1.3.2) (2019-11-25)
 
 
