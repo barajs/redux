@@ -12,7 +12,12 @@ const Redux = portion<any, ReduxContext, ReduxMold>({
     const store = !predefinedStore
       ? createStore(reducers, initialState)
       : predefinedStore
-    return { store, initialState: initialState || store.getState() }
+    const currentState = initialState || store.getState()
+    return {
+      store,
+      initialState: currentState,
+      lastState: {},
+    }
   },
   whenInitialized: flow<unknown, ReduxContext, ReduxMold>({
     bootstrap: ({ context, next }) => {

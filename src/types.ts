@@ -10,6 +10,8 @@ export interface ReduxMold {
 
 export interface ReduxContext {
   store: Store
+  initialState: any
+  lastState: any
 }
 
 export const BARA_REDUX = 'bara-redux'
