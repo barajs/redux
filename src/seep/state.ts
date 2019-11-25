@@ -5,7 +5,12 @@ import isEqual from 'lodash.isequal'
 
 import { BARA_REDUX } from '../types'
 
-export const stateProp = (subscribeProp: string, debug?: boolean) => (
+export interface StatePropSelector {
+  prop: string
+  selector: (state: any) => any
+}
+
+export const stateProp = (selectorData: StatePropSelector) => (
   _: any,
   contextes: any,
 ) => {
@@ -13,20 +18,14 @@ export const stateProp = (subscribeProp: string, debug?: boolean) => (
   const store: Store = data.store
   const initialState = data.initialState
   const lastState = data.lastState
-  const currentStateValue = lensProp(subscribeProp)(store.getState())
-  const lastStateValue =
-    lastState[subscribeProp] === undefined
-      ? lensProp(subscribeProp)(initialState)
-      : lensProp(subscribeProp)(lastState)
-  if (debug) {
-    console.log(
-      `Last state: ${JSON.stringify(lastStateValue, null, 2)}`,
-      `Current state: ${JSON.stringify(currentStateValue, null, 2)}`,
-    )
-  }
-  const shouldPass = !isEqual(currentStateValue, lastStateValue)
-  if (shouldPass) {
-    lastState[subscribeProp] = currentStateValue
+
+  const { prop, selector } = selectorData
+  const current = selector(store.getState())
+  const last =
+    lastState[prop] === undefined ? selector(initialState) : lastState[prop]
+
+  if (!isEqual(current, last)) {
+    lastState[prop] = current
     return true
   }
   return false
