@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/barajs/redux/compare/v1.3.3...v1.3.4) (2019-11-25)
+
+
+### Bug Fixes
+
+* **stateProp:** debugging ([49406c7](https://github.com/barajs/redux/commit/49406c75acc9b7fa1d2ef50b5791c4eb03ca1b4b))
+
 ## [1.3.3](https://github.com/barajs/redux/compare/v1.3.2...v1.3.3) (2019-11-25)
 
 
