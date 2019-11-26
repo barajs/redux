@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/barajs/redux/compare/v1.3.4...v1.3.5) (2019-11-26)
+
+
+### Bug Fixes
+
+* **seep:** stateProps compare from lodash to use === ([dd0ce6e](https://github.com/barajs/redux/commit/dd0ce6e4db4ce7cc9e6afac6f7b48cb1ff91a794))
+
 ## [1.3.4](https://github.com/barajs/redux/compare/v1.3.3...v1.3.4) (2019-11-25)
 
 
