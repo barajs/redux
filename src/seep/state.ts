@@ -25,12 +25,12 @@ export const stateProp = (selectorData: StatePropSelector) => (
   const last =
     lastState[prop] === undefined ? selector(initialState) : lastState[prop]
 
-  const shouldPass = !isEqual(current, last)
-  console.log(
-    `Should pass: ${shouldPass}`,
-    JSON.stringify(last),
-    JSON.stringify(current),
-  )
+  const shouldPass = current !== last
+  //   console.log(
+  //     `Should pass: ${shouldPass}`,
+  //     JSON.stringify(last),
+  //     JSON.stringify(current),
+  //   )
   if (shouldPass) {
     lastState[prop] = current
     return true
