@@ -9,14 +9,19 @@ export const getState = withStore(
   },
 )
 
+export interface GetStateBySelectorProps {
+  param: Formula
+  selector: (state: any) => any
+}
 export const getStateBySelector = withStore(
-  (paramFormula: Formula, selector: (state: any) => any) => async (
-    _: any,
+  (config: GetStateBySelectorProps) => async (
+    payload: any,
     store: Store,
     ...rest: any[]
   ) => {
-    const param = await Promise.resolve(paramFormula(_, ...rest))
+    const { param, selector } = config
+    const arg = await Promise.resolve(param(payload, ...rest))
     const state = store.getState()
-    return selector(param)(state)
+    return selector(arg)(state)
   },
 )
