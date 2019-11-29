@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/barajs/redux/compare/v1.4.0...v1.4.1) (2019-11-29)
+
+
+### Bug Fixes
+
+* **formula:** getStateBySelector to object param ([82a296f](https://github.com/barajs/redux/commit/82a296f00fa3af69c5a7a8f39c94923b4c267789))
+
 # [1.4.0](https://github.com/barajs/redux/compare/v1.3.5...v1.4.0) (2019-11-29)
 
 
