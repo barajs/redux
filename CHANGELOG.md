@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/barajs/redux/compare/v1.3.5...v1.4.0) (2019-11-29)
+
+
+### Features
+
+* **formula:** add getStateBySelector ([a913390](https://github.com/barajs/redux/commit/a913390ca568f9ae2f6f39a31e9abdee2e52e796))
+
 ## [1.3.5](https://github.com/barajs/redux/compare/v1.3.4...v1.3.5) (2019-11-26)
 
 
