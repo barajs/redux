@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/barajs/redux/compare/v1.4.1...v1.4.2) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade bara and fix audit ([b607903](https://github.com/barajs/redux/commit/b607903da668cf9a0d4e15050a060b8b61953064))
+
 ## [1.4.1](https://github.com/barajs/redux/compare/v1.4.0...v1.4.1) (2019-11-29)
 
 

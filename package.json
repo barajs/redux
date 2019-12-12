@@ -1,6 +1,6 @@
 {
   "name": "@barajs/redux",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Bara Redux integration module",
   "repository": {
     "type": "git",
