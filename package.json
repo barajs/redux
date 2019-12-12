@@ -22,10 +22,10 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@barajs/core": "3.0.0-alpha.429",
-    "@barajs/formula": "^3.0.0-alpha.470",
+    "@barajs/core": "^3.0.0-alpha.430",
+    "@barajs/formula": "^3.0.0-alpha.479",
     "lodash.isequal": "4.5.0",
-    "redux": "4.0.4"
+    "redux": "^4.0.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.5",
