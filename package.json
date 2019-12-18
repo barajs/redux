@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@barajs/core": "^3.0.0-alpha.430",
-    "@barajs/formula": "^3.0.0-alpha.479",
+    "@barajs/formula": "^3.0.0-alpha.480",
     "lodash.isequal": "4.5.0",
     "redux": "^4.0.4"
   },
