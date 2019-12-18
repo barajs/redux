@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/barajs/redux/compare/v1.4.2...v1.5.0) (2019-12-18)
+
+
+### Features
+
+* **formula:** add dispatchInvoke function ([627495f](https://github.com/barajs/redux/commit/627495fab09be432cefe268d2d4faa99f9087e28))
+
 ## [1.4.2](https://github.com/barajs/redux/compare/v1.4.1...v1.4.2) (2019-12-12)
 
 
