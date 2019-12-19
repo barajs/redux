@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/barajs/redux/compare/v1.5.0...v1.6.0) (2019-12-19)
+
+
+### Bug Fixes
+
+* **formula:** withStore can take multiple arguments ([9e7961e](https://github.com/barajs/redux/commit/9e7961e7d16166cb7cb688858c40456cd1e6c48d))
+
+
+### Features
+
+* **formula:** withStore can now detect the parameters type ([5634609](https://github.com/barajs/redux/commit/563460917e1f4801ed1a1be91b401d3f98f731d7))
+
 # [1.5.0](https://github.com/barajs/redux/compare/v1.4.2...v1.5.0) (2019-12-18)
 
 
